@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Indian Premier League</title>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<style media="screen">
+p{
+	margin: 0 0 10px;
+	color: blue;
+
+}
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<div class="container ">
+			<h1 class="title"><b>INDIAN PREMIER LEAGUE-2017</b></h1>
+		</div>
+	</div>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-12 col-sm-11 col-xs-11">
+				<div class="main-content">
+					<div class="all-products page">
+						<ul class="products-list">
+							<script id="products-template" type="x-handlebars-template">​ {{#each this}}
+
+								<li class="myclass" data-index="{{id}}">
+                  <a id="{{id}}" href="#" class="product-photo"><img src="{{team_img_url}}" height="130" alt="{{team_name}}" /></a>
+									<h2><a href="#"><b>{{team_name}}</b> </a></h2><br>
+
+                 	</li>
+
+								{{/each}}
+
+
+							</script>
+
+
+
+						</ul>
+					</div>
+					<!-- <div class="error page">
+						<h3>Sorry, something went wrong :</h3>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+
+
+
+	<div class="teamModal">
+	</div>
+
+
+</body>
+<script src="js_files/config.js"></script>
+<script src="js_files/iplApp.js"></script>
+<script src="js_files/jqevent.js"></script>
+<link href="css/header.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+</html>

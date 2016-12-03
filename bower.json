@@ -1,0 +1,17 @@
+{
+  "name": "ipl",
+  "authors": [
+    "prsharma0403 <prsharma0403@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
